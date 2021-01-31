@@ -11,50 +11,50 @@
     - Go to file above run as JUnit Test
 
 3. Quick documentation of your API
-  - URL of api is http://localhost:8080/api/v1/score/..
-  + For Postman: 
-    Please import Score-Ranking-API.json to the Postman Tools
+   - URL of api is http://localhost:8080/api/v1/score/..
+   + For Postman: 
+    - Please import Score-Ranking-API.json to the Postman Tools
 
-  + For using cURL:
-   - Create Post:
-    curl --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"player":"edo","score":"100","time": "2021-01-31"}' \
-    http://localhost:8080/api/v1/score/
+   + For using cURL:
+    - Create Post:
+       curl --header "Content-Type: application/json" \
+       --request POST \
+       --data '{"player":"edo","score":"100","time": "2021-01-31"}' \
+       http://localhost:8080/api/v1/score/
 
-  - Get Score by id
-    curl -v http://localhost:8080/api/v1/score/1
+    - Get Score by id
+      curl -v http://localhost:8080/api/v1/score/1
   
-  - Delete Score by id
-    curl -X DELETE http://localhost:8080/api/v1/score/1
+    - Delete Score by id
+      curl -X DELETE http://localhost:8080/api/v1/score/1
     
-  - Get list of score by player
-    Create Post:
-    curl --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"player":"edo"}' \
-    http://localhost:8080/api/v1/score/search
+    - Get list of score by player
+       Create Post:
+       curl --header "Content-Type: application/json" \
+       --request POST \
+       --data '{"player":"edo"}' \
+       http://localhost:8080/api/v1/score/search
 
-  - Get list of score by after date
-    Create Post:
-    curl --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"afterDate":"2021-01-30"}' \
-    http://localhost:8080/api/v1/score/search
+    - Get list of score by after date
+       Create Post:
+       curl --header "Content-Type: application/json" \
+       --request POST \
+       --data '{"afterDate":"2021-01-30"}' \
+       http://localhost:8080/api/v1/score/search
 
-  - Get list of score by many players
-    Create Post:
-    curl --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"players":["edo", "player"]}' \
-    http://localhost:8080/api/v1/score/search
+    - Get list of score by many players
+       Create Post:
+       curl --header "Content-Type: application/json" \
+       --request POST \
+       --data '{"players":["edo", "player"]}' \
+       http://localhost:8080/api/v1/score/search
 
-  - Get list of score by after date and before date
-   Create Post:
-    curl --header "Content-Type: application/json" \
-    --request POST \
-    --data '{"afterDate":"2021-01-30", "beforeDate": "2021-02-29"}' \
-    http://localhost:8080/api/v1/score/search
+    - Get list of score by after date and before date
+      Create Post:
+       curl --header "Content-Type: application/json" \
+       --request POST \
+       --data '{"afterDate":"2021-01-30", "beforeDate": "2021-02-29"}' \
+       http://localhost:8080/api/v1/score/search
 
-  - Get players' history by player name
-    http://localhost:8080/api/v1/score/history/eDo
+    - Get players' history by player name
+      http://localhost:8080/api/v1/score/history/eDo
