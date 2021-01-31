@@ -12,6 +12,7 @@
 
 3. Quick documentation of your API
    - URL of api is http://localhost:8080/api/v1/score/..
+
    + For Postman: 
     - Please import Score-Ranking-API.json to the Postman Tools
 
